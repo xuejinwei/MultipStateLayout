@@ -16,7 +16,7 @@ import java.io.Serializable;
 public abstract class StateOptions implements Serializable {
 
     View stateView;
-    private MultipStateLayout mAttachedMsl;
+    private MultiStateLayout mAttachedMsl;
 
     protected abstract @LayoutRes int layoutId();
 
@@ -27,11 +27,11 @@ public abstract class StateOptions implements Serializable {
         return stateView;
     }
 
-    public void setAttachedMsl(MultipStateLayout attachedMsl) {
+    public void setAttachedMsl(MultiStateLayout attachedMsl) {
         mAttachedMsl = attachedMsl;
     }
 
-    public MultipStateLayout getAttachedMsl() {
+    public MultiStateLayout getAttachedMsl() {
         return mAttachedMsl;
     }
 }

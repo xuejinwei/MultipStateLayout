@@ -13,7 +13,7 @@ import android.widget.LinearLayout;
  * Email:xuejinwei@outlook.com
  */
 
-public class MultipStateLayout extends LinearLayout {
+public class MultiStateLayout extends LinearLayout {
 
     private static final String MSG_ONE_CHILD = "MultipStateLayout must have one child!";
     private final        Object mOptionsLock  = new Object();
@@ -21,11 +21,11 @@ public class MultipStateLayout extends LinearLayout {
     private FrameLayout stContainer;
     private StateOptions mCurrentOptions = null;
 
-    public MultipStateLayout(Context context) {
+    public MultiStateLayout(Context context) {
         super(context);
     }
 
-    public MultipStateLayout(Context context, AttributeSet attrs) {
+    public MultiStateLayout(Context context, AttributeSet attrs) {
         super(context, attrs);
     }
 
